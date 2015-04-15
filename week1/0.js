@@ -4,8 +4,9 @@
 
 // Literal notation does not use quotation marks for strings, constructor funtion does. The following expressions create the same exact regular expression:
 
-/\,tx/i
+/\s*,\s*tx$/i
 
-new RegExp('\,tx', 'i');
+new RegExp('\s*,\s*tx$', 'i');
 
-new RegExp(/\,tx/, 'i');
+new RegExp(/\s*,\s*tx$/, 'i');
+
